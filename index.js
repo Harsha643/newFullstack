@@ -36,7 +36,7 @@ app.use("/student/assignment", require("./Students/Routers/studentAssignmentRout
 
 
 // MongoDB Connection
-mongoose.connect(process.env.MONGOURI)
+mongoose.connect(process.env.MONGOURI ||' mongodb+srv://harsha:harsha123@cluster1.a42hvqc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1')
 .then(() => 
    {
     console.log("MongoDB connected")
